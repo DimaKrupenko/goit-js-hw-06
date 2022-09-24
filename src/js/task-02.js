@@ -9,6 +9,11 @@ const ingredients = [
 const ulEl = document.querySelector("#ingredients");
 console.log(ulEl);
 
+// const liEl = ingredients
+//   .map((ingredient) => `<li class="item">${ingredient}</li>`)
+//   .join("");
+// ulEl.insertAdjacentHTML("beforebegin", liEl);
+
 const liEl = document.createElement("li");
 liEl.classList.add("item");
 liEl.textContent = ingredients[0];
