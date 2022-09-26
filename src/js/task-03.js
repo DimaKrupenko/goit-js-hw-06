@@ -16,7 +16,7 @@ const gallery = document.querySelector(".gallery");
 
 const imgEl = images
   .map(
-    (image) => `<li><img class="img" src=${image.url} alt=${image.alt}></li> `
+    (image) => `<li><img class="img" src=${image.url} alt='${image.alt}'></li> `
   )
   .join("");
 // imgEl.classList.add("display: flex");
