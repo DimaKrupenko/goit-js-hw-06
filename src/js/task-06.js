@@ -7,5 +7,5 @@ function onInputaAmount(event) {
   if (event.currentTarget.value.length == inputLength.dataset.length) {
     return inputEl.classList.add("valid");
   }
-  return inputEl.classList.add("invalid");
+  inputEl.classList.add("invalid");
 }
