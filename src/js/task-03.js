@@ -19,6 +19,5 @@ const imgEl = images
     (image) => `<li><img class="img" src=${image.url} alt='${image.alt}'></li> `
   )
   .join("");
-// imgEl.classList.add("display: flex");
-console.log(imgEl);
+
 gallery.insertAdjacentHTML("afterbegin", imgEl);
