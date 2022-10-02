@@ -1,10 +1,9 @@
 const fontScale = document.querySelector("#font-size-control");
 
-fontScale.addEventListener("click", onFontScale);
+fontScale.addEventListener("input", onFontScale);
 
 function onFontScale(event) {
-  console.log(event);
+  console.log(event.target.valueAsNumber);
   const span = document.querySelector("#text");
-  span.style.fontSize = event.clientX + "px";
-  console.log(event.clientX);
+  span.style.fontSize = event.target.valueAsNumber + "px";
 }
